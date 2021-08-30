@@ -27,3 +27,7 @@ TARGET_KERNEL_CONFIG := cactus_defconfig
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := cactus
+
+# CMDLINES for Halium
+BOARD_KERNEL_CMDLINE += console=tty0
+BOARD_KERNEL_CMDLINE += apparmor=1 security=apparmor
